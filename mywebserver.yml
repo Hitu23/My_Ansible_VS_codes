@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+   - name: install web server on RedHat nodes
+     dnf:
+      name: httpd
+      state: present
