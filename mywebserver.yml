@@ -1,9 +1,15 @@
 ---
-- hosts: all
+- hosts: mywebserver
   become: true
+  gather_facts: yes
   tasks:
    - name: install web server on RedHat nodes
      dnf:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: present
-      
+    
+   - name: start webserver on RedHat nodes
+     service:
+      name: "{{mywebpackonredhat}}"
+      state: present
+    
