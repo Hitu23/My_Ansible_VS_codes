@@ -1,6 +1,6 @@
 ---
-- host: mywebserver
-  become: true 
+- hosts: mywebserver
+  become: yes 
   tasks:
     - name: install java on redhat node
       dnf:
