@@ -11,5 +11,5 @@
    - name: start webserver on RedHat nodes
      service:
       name: "{{mywebpackonredhat}}"
-      state: present
+      state: started
     
