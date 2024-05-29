@@ -2,15 +2,13 @@
 - hosts: 172.31.28.251
   become: yes 
   tasks:
-  - include_tasks: myfile.yml
-  - name: install webserver
-     dnf: 
-      name: httpd
-      state: present
+    - name: install webserver
+      include_tasks: myfile.yml
 
-  - name: copy test file
-    copy:
-     src: mytestfile
-     dest: /home/maha/mytestfile
+    - name: copy test file
+      copy:
+        src: mytestfile
+        dest: /home/maha/mytestfile
+
 
     
