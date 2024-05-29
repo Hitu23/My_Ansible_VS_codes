@@ -14,8 +14,8 @@
 
   - name: download internet file
     get_url: 
-     url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.15/bin/apache-tomcat-10.0.15.tar.gz
-     dest: /home/maha/apache-tomcat-10.0.15.tar.gz
+     url: https://tomcat.apache.org/download-80.cgi
+     dest: /home/maha/download-80.cgi
      force_basic_auth: yes
 
 
