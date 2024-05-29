@@ -12,5 +12,10 @@
       src: mytestfile
       dest: /home/maha/mytestfile
 
+  - name: download internet file
+    get_url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.15/bin/apache-tomcat-10.0.15.tar.gz
+    dest: /home/maha/tomcat
+    force_basic_auth: yes
+
 
     
