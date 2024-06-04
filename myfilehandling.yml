@@ -24,5 +24,9 @@
      dest: /home/maha/download-80.cgi
      force_basic_auth: yes
 
+  - name: copy file into node side
+    template: 
+      src: myindex.j2
+      dest: /var/www/html/index.html
 
     
