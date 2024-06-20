@@ -1,5 +1,5 @@
 ---
 - hosts: 172.31.28.251
-  become: yes 
+  become: true 
   roles:
   - {role: tomrole, when: ansible_os_family=="RedHat"}
