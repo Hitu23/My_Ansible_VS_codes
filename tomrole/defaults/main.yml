@@ -1,2 +1,3 @@
 ---
 # defaults file for tomrole
+- include_tasks: myjavainstall.yml

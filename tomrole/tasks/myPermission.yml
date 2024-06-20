@@ -1,0 +1,6 @@
+---
+- name: give execute permisson on startup
+  command: chmod +x /opt/tomcat/bin/startup.sh
+
+- name: give execute permisson on shutdown
+  command: chmod +x /opt/tomcat/bin/shutdown.sh
